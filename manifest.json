@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "в",
+	"version": "1.0",
+	"description": "Автоматически добавляет подпись в Telegram Web.",
+	"icons": {
+		"200": "icon.png"
+	},
+	"permissions": ["storage", "tabs"],
+	"host_permissions": ["https://web.telegram.org/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://web.telegram.org/*"],
+			"js": ["content.js"]
+		}
+	],
+	"action": {
+		"default_popup": "options.html",
+		"default_icon": {
+			"200": "icon.png"
+		}
+	}
+}

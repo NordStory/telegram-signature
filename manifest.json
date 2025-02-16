@@ -1,10 +1,12 @@
 {
 	"manifest_version": 3,
-	"name": "в",
+	"name": "Telegram Auto Signature",
 	"version": "1.0",
-	"description": "Автоматически добавляет подпись в Telegram Web.",
+	"description": "Aвтоматически добавляет подпись к каждому сообщению в веб-версии Telegram. Оно полезно для командных аккаунтов, где несколько сотрудников используют один и тот же Telegram-аккаунт, но хотят подписывать свои сообщения, чтобы было понятно, кто именно пишет. https://github.com/NordStory/telegram-signature",
 	"icons": {
-		"200": "icon.png"
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
 	},
 	"permissions": ["storage", "tabs"],
 	"host_permissions": ["https://web.telegram.org/*"],
@@ -17,7 +19,9 @@
 	"action": {
 		"default_popup": "options.html",
 		"default_icon": {
-			"200": "icon.png"
+			"16": "icon16.png",
+			"48": "icon48.png",
+			"128": "icon128.png"
 		}
 	}
 }

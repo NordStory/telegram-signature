@@ -109,14 +109,6 @@
 					></path>
 				</svg>
 			</a>
-			<script>
-				document
-					.getElementById('myLink')
-					.addEventListener('click', function (e) {
-						e.preventDefault() // Отменяем стандартное поведение
-						chrome.tabs.create({ url: this.href }) // Открываем через API
-					})
-			</script>
 		</div>
 		<script src="options.js"></script>
 	</body>

@@ -21,3 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	})
 })
+
+document.getElementById('myLink').addEventListener('click', function (e) {
+	e.preventDefault() // Отменяем стандартное поведение
+	chrome.tabs.create({ url: this.href }) // Открываем через API
+})
